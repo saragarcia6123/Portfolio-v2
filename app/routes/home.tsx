@@ -1,4 +1,6 @@
 import type { Route } from "./+types/home";
+import Sidebar from "~/components/Sidebar";
+import MainPanel from "~/components/MainPanel";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,8 +11,9 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="size-full flex items-center justify-center">
-      <h1 className="text-5xl">Under Construction</h1>
+    <div className="size-full grid grid-cols-[max(25%,240px)_1fr]">
+      <Sidebar />
+      <MainPanel />
     </div>
   );
 }
