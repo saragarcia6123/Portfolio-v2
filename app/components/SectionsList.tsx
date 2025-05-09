@@ -9,7 +9,7 @@ export default function SectionsList() {
         : "about"
       : "about";
   return (
-    <div className="flex flex-col gap-4 p-2">
+    <div className="flex flex-col justify-end gap-8 h-full pl-4">
       {sections.map((name: string) => (
         <SectionTag
           name={name}
@@ -17,7 +17,8 @@ export default function SectionsList() {
           selected={currentSection === name}
         />
       ))}
-      <hr className="mt-1 opacity-25" />
+
+      <hr className="opacity-25" />
     </div>
   );
 }
@@ -27,9 +28,9 @@ function SectionTag({ name, selected }: { name: string; selected: boolean }) {
   return (
     <a href={`#${name.toLowerCase()}`}>
       <h3
-        className="pl-2 tracking-widest font-light hover:opacity-100"
+        className="pl-2 tracking-[.2em] hover:opacity-100 text-xl flex justify-end"
         style={{
-          opacity: selected ? "100%" : hover ? "75%" : "25%",
+          opacity: selected ? "100%" : hover ? "80%" : "50%",
         }}
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}

@@ -8,41 +8,28 @@
 
 html,
 body {
-  @apply bg-white dark:bg-[rgb(30,30,40)] font-[Red_Hat_Display];
+  @apply bg-[rgb(48,77,128)] font-[Red_Hat_Display];
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  @apply text-5xl;
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-h2 {
-  @apply text-4xl;
+::-webkit-scrollbar-track {
+  width: 8px;
 }
 
-h3 {
-  @apply text-3xl;
-}
-
-h4 {
-  @apply text-2xl;
-}
-
-h5 {
-  @apply text-xl;
-}
-
-h6 {
-  @apply text-lg;
-}
-
-p {
-  @apply text-xl;
+::-webkit-scrollbar-thumb {
+  background-color: rgb(125, 125, 125);
+  height: 2px;
+  border-radius: 64px;
 }

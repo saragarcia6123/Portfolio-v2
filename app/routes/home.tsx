@@ -11,9 +11,29 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="size-full grid grid-cols-[max(25%,240px)_1fr]">
+    <>
+      {/* Background layer */}
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: 'url("/bg.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.1,
+          zIndex: 0,
+        }}
+      />
       <Sidebar />
-      <MainPanel />
-    </div>
+      <div className="ml-64">
+        <MainPanel />
+      </div>
+      <footer className="pl-48 w-full p-8 flex justify-center">
+        © 2025 saragarcia.dev
+      </footer>
+    </>
   );
 }
