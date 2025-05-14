@@ -6,7 +6,7 @@ import { Carousel } from "./Carousel";
 
 export default function Projects() {
   return (
-    <div className="md:px-8 box-border flex flex-col md:gap-16 gap-0 justify-center mb-16 min-w-full">
+    <div className="card-section">
       {projects.map((project: Project) => (
         <ProjectCard project={project} />
       ))}
@@ -16,9 +16,9 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col justify-center align-middle m-8 p-8 gap-2 md:gap-4 rounded-xl bg-gray-200/10 shadow-2xl opacity-80">
+    <div className="card">
       <h2 className="text-2xl tracking-wider">{project.title.toUpperCase()}</h2>
-      <p className="text-left text-lg">{project.description}</p>
+      <p className="text-lg">{project.description}</p>
       <ProjectTechs project={project} />
       <Carousel images={project.images} />
       <div className="w-full flex justify-center mt-8 mb-4">
@@ -30,7 +30,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 function ProjectTechs({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col gap-4 text-sm">
+    <div className="flex flex-col gap-4 text-sm mt-2">
       <div className="flex gap-2 flex-wrap">
         {project.technologies.map((techName) => (
           <TechItemCard

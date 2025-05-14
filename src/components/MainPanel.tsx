@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import InfoCard from "./InfoCard";
 import Projects from "./Projects";
 import TechCard from "./TechCard";
+import Timeline from "./Timeline";
 
 export default function MainPanel() {
   return (
@@ -12,6 +13,9 @@ export default function MainPanel() {
       </div>
       <Section name={"projects"}>
         <Projects />
+      </Section>
+      <Section name={"timeline"}>
+        <Timeline />
       </Section>
     </div>
   );

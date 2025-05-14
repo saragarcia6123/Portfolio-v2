@@ -36,8 +36,8 @@ export function Carousel({ images }: { images: string[] }) {
   };
 
   return (
-    <div className="w-full flex flex-col items-center md:mt-8 md:gap-4">
-      <div className="flex items-center md:my-12 my-8 max-w-[75vw] md:max-w-[600px]">
+    <div className="w-full flex flex-col items-center md:gap-2">
+      <div className="flex items-center my-8 max-w-[75vw] md:max-w-[600px]">
         <div className="flex items-center aspect-3/2 w-full">
           <img
             className="md:object-contain object-cover rounded-xl w-full"

@@ -1,5 +1,6 @@
 import type { IconType } from "react-icons";
 import { FaBriefcase, FaHome } from "react-icons/fa";
+import { FaTimeline } from "react-icons/fa6";
 
 export const SECTIONS: Section[] = [
   {
@@ -9,6 +10,10 @@ export const SECTIONS: Section[] = [
   {
     name: "projects",
     icon: FaBriefcase,
+  },
+  {
+    name: "timeline",
+    icon: FaTimeline,
   },
 ];
 
