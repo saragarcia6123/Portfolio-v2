@@ -1,47 +1,9 @@
 import { SECTION_NAMES, SECTIONS, type Section } from "../data/config";
-import { createElement, useEffect, useRef, useState } from "react";
+import { createElement } from "react";
 
 export default function SectionsNav({ selected }: { selected: string }) {
-  const [visible, setVisible] = useState(true);
-  const timeoutIdRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setVisible(true);
-      if (timeoutIdRef.current) {
-        clearTimeout(timeoutIdRef.current);
-      }
-      timeoutIdRef.current = setTimeout(() => {
-        setVisible(false);
-      }, 1000);
-    };
-
-    // Debounce the scroll event
-    const debouncedHandleScroll = () => {
-      if (timeoutIdRef.current) {
-        clearTimeout(timeoutIdRef.current);
-      }
-      timeoutIdRef.current = setTimeout(handleScroll, 100);
-    };
-
-    window.addEventListener("scroll", debouncedHandleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", debouncedHandleScroll);
-      if (timeoutIdRef.current) {
-        clearTimeout(timeoutIdRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div
-      style={{
-        opacity: visible ? "100%" : "0%",
-        transition: "opacity 0.5s ease-out",
-      }}
-      className="fixed z-100 top-4 left-1/2 transform -translate-x-1/2 md:hidden flex gap-2 rounded-full justify-center bg-white/80 p-4"
-    >
+    <div className="fixed z-100 top-4 left-1/2 transform -translate-x-1/2 md:hidden flex gap-2 rounded-full justify-center bg-white/70 px-4 py-2">
       {SECTION_NAMES.map((name: string) => (
         <SectionIcon
           key={`section-tag-${name}`}
