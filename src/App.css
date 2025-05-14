@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply font-[Red_Hat_Display];
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(125, 125, 125);
+  height: 2px;
+  border-radius: 64px;
+}
+
+.social-badge {
+  @apply flex h-16 w-full max-w-[300px] md:max-w-none items-center justify-center gap-12 md:gap-6;
+  @apply transition-all duration-100 ease-linear;
+}
+
+.badge-icon {
+  @apply size-8
+}
+
+.social-name {
+  @apply w-12 text-nowrap mr-6 md:mr-10
+}

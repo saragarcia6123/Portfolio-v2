@@ -1,0 +1,86 @@
+import { projects, type Project } from "../data/projects";
+import { technologies, type TechType } from "../data/tech";
+import { TechItemCard } from "./TechItemCard";
+import { FaGithub } from "react-icons/fa";
+import { Carousel } from "./Carousel";
+
+export default function Projects() {
+  return (
+    <div className="md:px-8 box-border flex flex-col md:gap-16 gap-0 justify-center mb-16 min-w-full">
+      {projects.map((project: Project) => (
+        <ProjectCard project={project} />
+      ))}
+    </div>
+  );
+}
+
+function ProjectCard({ project }: { project: Project }) {
+  return (
+    <div className="flex flex-col justify-center align-middle m-8 p-8 gap-2 md:gap-4 rounded-xl bg-gray-200/10 shadow-2xl opacity-80">
+      <h2 className="text-2xl tracking-wider">{project.title.toUpperCase()}</h2>
+      <p className="text-left text-lg">{project.description}</p>
+      <ProjectTechs project={project} />
+      <Carousel images={project.images} />
+      <div className="w-full flex justify-center mt-8 mb-4">
+        <ProjectLinks project={project} />
+      </div>
+    </div>
+  );
+}
+
+function ProjectTechs({ project }: { project: Project }) {
+  return (
+    <div className="flex flex-col gap-4 text-sm">
+      <div className="flex gap-2 flex-wrap">
+        {project.technologies.map((techName) => (
+          <TechItemCard
+            key={`${project}-${techName}-badge`}
+            tech={
+              technologies.filter((tech: TechType) => techName === tech.name)[0]
+            }
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ProjectLinks({ project }: { project: Project }) {
+  return (
+    <div className="flex gap-4 md:text-xl text-nowrap">
+      {project.liveLink && <LiveLink link={project.liveLink} />}
+      <RepoLink link={project.repoLink} />
+    </div>
+  );
+}
+
+function LiveLink({ link }: { link: string }) {
+  return (
+    <a
+      className="flex gap-2 items-center px-4 py-2 border rounded-sm border-emerald-50/90 hover:bg-white/10"
+      href={link}
+      target="_blank"
+    >
+      <span className="relative flex items-center">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-200 opacity-75"></span>
+        <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-300"></span>
+      </span>
+      <span>Live Site</span>
+    </a>
+  );
+}
+
+function RepoLink({ link }: { link: string }) {
+  return (
+    <a
+      className="flex items-center gap-2 px-4 py-2 border-1 rounded-sm border-emerald-50/90 hover:bg-white/10"
+      href={link}
+      target="_blank"
+    >
+      <span className="relative flex items-center">
+        <FaGithub />
+      </span>
+      Source Code
+    </a>
+  );
+}
