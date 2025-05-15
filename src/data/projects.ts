@@ -12,7 +12,7 @@ export const projects: Project[] = [
     title: "Sentiverse",
     description:
       "Full-stack application that analyzes song lyrics and classifies them into emotionally opposite pairs.",
-    images: getImages("sentiverse", "jpg", 3),
+    images: getImages("sentiverse", "jpg", 4),
     technologies: [
       "React",
       "TailwindCSS",
