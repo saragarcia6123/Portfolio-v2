@@ -20,7 +20,7 @@ export function TechHeader({
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="uppercase tracking-wide hover:cursor-pointer border-1 hover:bg-emerald-50/20 px-3.5 py-2 rounded-sm"
+      className="uppercase tracking-wide hover:cursor-pointer border-1 hover:bg-emerald-50/20 px-3.5 py-2 rounded-sm hidden"
       style={style}
     >
       <h3>{name}</h3>
