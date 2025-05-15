@@ -24,6 +24,7 @@ function App() {
 
       {/* Background layer */}
       <div
+        className="blur-md"
         style={{
           position: "fixed",
           top: 0,
@@ -33,7 +34,7 @@ function App() {
           backgroundImage: 'url("/bg.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.4,
+          opacity: 0.3,
           zIndex: -20,
           width: "100%",
           height: "100%",
@@ -45,7 +46,7 @@ function App() {
           width: "100%",
           height: "100%",
           background:
-            "linear-gradient(to bottom, rgba(100, 200, 220, 0.2), rgba(40, 80, 160, 0.6))",
+            "linear-gradient(to bottom, rgba(40, 70, 120, 0.5), rgba(20, 40, 80, 0.9))",
           position: "fixed",
           top: 0,
           left: 0,
