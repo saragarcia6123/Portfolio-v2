@@ -57,7 +57,7 @@ export default function TechCard() {
 
   return (
     <div className="flex flex-col items-center gap-2 p-4 md:mx-24 mx-3 mb-8">
-      <h3 className="text-xl uppercase tracking-widest">Main Stack</h3>
+      <h3 className="text-xl uppercase tracking-widest">Tech Stack</h3>
       <div className="flex flex-wrap gap-2 justify-center">
         {Object.values(TechSectionEnum).map((item: TechSectionEnum) => (
           <TechHeader

@@ -254,7 +254,7 @@ export const frameworks: TechType[] = [
     main: true,
   },
   {
-    name: "TailwindCSS",
+    name: "Tailwind",
     icon: SiTailwindcss,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
@@ -296,6 +296,13 @@ export const frameworks: TechType[] = [
     main: false,
   },
   {
+    name: "Streamlit",
+    icon: SiStreamlit,
+    groups: [TechSectionEnum.DS, TechSectionEnum.ML, TechSectionEnum.FRONT],
+    category: TechCategoryEnum.FRAMEWORK,
+    main: true,
+  },
+  {
     name: "Android",
     icon: SiAndroid,
     groups: [TechSectionEnum.MOBILE],
@@ -322,13 +329,6 @@ export const frameworks: TechType[] = [
     groups: [TechSectionEnum.MOBILE],
     category: TechCategoryEnum.FRAMEWORK,
     main: false,
-  },
-  {
-    name: "Streamlit",
-    icon: SiStreamlit,
-    groups: [TechSectionEnum.DS, TechSectionEnum.ML, TechSectionEnum.FRONT],
-    category: TechCategoryEnum.FRAMEWORK,
-    main: true,
   },
   {
     name: "11ty",
@@ -575,7 +575,7 @@ export const libraries: TechType[] = [
 
 export const databases: TechType[] = [
   {
-    name: "PostgreSQL",
+    name: "Postgres",
     icon: SiPostgresql,
     groups: [TechSectionEnum.DB],
     category: TechCategoryEnum.DB,
@@ -708,7 +708,7 @@ export const tools: TechType[] = [
     main: true,
   },
   {
-    name: "Google Cloud",
+    name: "GCP",
     icon: SiGooglecloud,
     groups: [TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.CLOUD,
@@ -740,14 +740,14 @@ export const tools: TechType[] = [
     icon: SiNpm,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.BUILD,
-    main: true,
+    main: false,
   },
   {
     name: "Vite",
     icon: SiVite,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.BUILD,
-    main: true,
+    main: false,
   },
   {
     name: "Vitest",
@@ -789,7 +789,7 @@ export const tools: TechType[] = [
     icon: SiFigma,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.DESIGN,
-    main: true,
+    main: false,
   },
   {
     name: "Material UI",

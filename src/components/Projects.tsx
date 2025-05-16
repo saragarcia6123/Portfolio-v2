@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div className="card-section">
       {projects.map((project: Project) => (
-        <ProjectCard project={project} />
+        <ProjectCard key={`${project.id}-card`} project={project} />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import { FaArrowUpRightFromSquare, FaLocationDot } from "react-icons/fa6";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import {
   timeline,
   type TimelineItem,
@@ -9,7 +9,10 @@ export default function Timeline() {
   return (
     <div className="card-section">
       {timeline.map((item: TimelineItem) => (
-        <TimelineCard item={item} />
+        <TimelineCard
+          key={`timeline-project-card-${item.title.toLowerCase()}`}
+          item={item}
+        />
       ))}
     </div>
   );
@@ -24,7 +27,6 @@ function TimelineCard({ item }: { item: TimelineItem }) {
             {item.title}
           </h2>
           <h4 className="flex items-center gap-2 font-extrabold text-lg tracking-widest">
-            <FaLocationDot />
             <span>{item.location}</span>
           </h4>
           <p className="italic">
@@ -42,7 +44,10 @@ function TimelineCard({ item }: { item: TimelineItem }) {
       </div>
       <div className="flex flex-col gap-4 mt-4">
         {item.projects.map((project: TimelineProject) => (
-          <TimelineProjectContent project={project} />
+          <TimelineProjectContent
+            key={`timeline-project-item-${project.title}`}
+            project={project}
+          />
         ))}
       </div>
     </div>

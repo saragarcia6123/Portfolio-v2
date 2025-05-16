@@ -6,11 +6,11 @@ export default function InfoCard() {
   return (
     <div className="box-border flex flex-col md:flex-row gap-8 justify-center md:pl-8 mb-2 md:mt-12 mt-24">
       <div className="flex md:flex-row flex-col items-center gap-10 justify-center">
-        <div className="aspect-square flex justify-center">
+        <div className="aspect-square flex justify-center w-32 min-w-[140px]">
           <img
             src={ProfilePicture}
             alt="Closeup portrait of me"
-            className="aspect-square rounded-full sepia-[25%] border-2 border-white/90 w-32 min-w-[140px]"
+            className="rounded-full sepia-[25%] border-2 border-white/90"
           />
         </div>
         <div className="flex flex-col md:h-full justify-center text-center md:text-start">

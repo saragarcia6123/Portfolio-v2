@@ -52,5 +52,5 @@ html {
 }
 
 .card {
-  @apply flex flex-col justify-center align-middle m-4 p-8 gap-2 rounded-xl bg-gray-200/10 shadow-2xl opacity-80
+  @apply flex flex-col justify-center align-middle m-4 p-8 gap-2 rounded-xl bg-gray-200/10 shadow-lg opacity-80
 }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 export function Carousel({ images }: { images: string[] }) {
   const DEFAULT_DELAY = 2000;
@@ -37,7 +38,16 @@ export function Carousel({ images }: { images: string[] }) {
 
   return (
     <div className="w-full flex flex-col items-center md:gap-2">
-      <div className="flex items-center my-8 max-w-[75vw] md:max-w-[600px]">
+      <div className="flex justify-between items-center gap-8 my-8 max-w-[75vw] md:max-w-[600px]">
+        <FaArrowLeft
+          onClick={() =>
+            handleCircleClick(
+              (currentIndex - 1 + images.length) % images.length
+            )
+          }
+          className="hover:cursor-pointer hover:opacity-70  user-select-none"
+          size={24}
+        />
         <div className="flex items-center aspect-3/2 w-full">
           <img
             className="md:object-contain object-cover rounded-xl w-full"
@@ -45,6 +55,11 @@ export function Carousel({ images }: { images: string[] }) {
             alt={`Carousel Image ${currentIndex}`}
           />
         </div>
+        <FaArrowRight
+          onClick={() => handleCircleClick((currentIndex + 1) % images.length)}
+          className="hover:cursor-pointer hover:opacity-70 user-select-none"
+          size={24}
+        />
       </div>
       <Indicators
         images={images}

@@ -6,7 +6,7 @@ import Timeline from "./Timeline";
 
 export default function MainPanel() {
   return (
-    <div className="flex flex-col gap-8 md:gap-16 md:ml-68 md:m-8 pb-8 bg-[rgba(255,255,255,0.05)] md:border-1 md:border-emerald-50/60 md:rounded-xl">
+    <div className="flex flex-col gap-8 md:gap-16 md:ml-62 pb-8 bg-white/5">
       <div id={"about"} className="flex flex-col gap-8">
         <InfoCard />
         <TechCard />

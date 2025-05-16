@@ -18,9 +18,11 @@ export default function Sections({ sidebar }: { sidebar: boolean }) {
       });
 
       const currentSection = sections.find((section) => {
+        const leeway = 200;
         const scrollTop = window.pageYOffset;
         return (
-          scrollTop >= section.top && scrollTop < section.top + section.height
+          scrollTop >= section.top - leeway &&
+          scrollTop + leeway < section.top + section.height
         );
       });
 
@@ -31,7 +33,7 @@ export default function Sections({ sidebar }: { sidebar: boolean }) {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [SECTION_NAMES]);
+  }, []);
 
   return (
     <>

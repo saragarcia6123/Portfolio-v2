@@ -29,7 +29,9 @@ function SectionIcon({ name, selected }: { name: string; selected: boolean }) {
       >
         {SECTIONS.filter((section: Section) => section.name === name).map(
           (section: Section) => (
-            <div>{createElement(section.icon)}</div>
+            <div key={`${section.name}-icon`}>
+              {createElement(section.icon)}
+            </div>
           )
         )}
       </h3>
