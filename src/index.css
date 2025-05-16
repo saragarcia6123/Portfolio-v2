@@ -3,6 +3,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  --primary: rgb(51, 135, 82);
+  --secondary: rgb(220,255,240);
+  --tertiary: rgb(39, 134, 106);
+  --bg: rgb(30, 28, 28);
 }
 
 .user-select-none {

@@ -12,7 +12,7 @@ export const SECTIONS: Section[] = [
     icon: FaBriefcase,
   },
   {
-    name: "timeline",
+    name: "experience",
     icon: FaTimeline,
   },
 ];

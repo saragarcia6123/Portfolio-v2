@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply font-[Red_Hat_Display];
+  @apply font-mono;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -29,12 +29,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(125, 125, 125);
+  background-color: var(--primary);
   height: 2px;
   border-radius: 64px;
 }
 
 .social-badge {
+  @apply hover:border-[var(--tertiary)];
   @apply flex h-16 w-full max-w-[300px] md:max-w-none items-center justify-center gap-12 md:gap-6;
   @apply transition-all duration-100 ease-linear;
 }
@@ -43,8 +44,19 @@ html {
   @apply size-8
 }
 
+.badge {
+  @apply border-[var(--primary)];
+  p {
+     @apply tracking-widest;
+  }
+}
+
+.link-badge {
+  @apply border-1 flex gap-2 items-center px-4 py-2 hover:bg-white/10 text-base;
+}
+
 .social-name {
-  @apply w-12 text-nowrap mr-6 md:mr-10
+  @apply w-12 text-nowrap mr-6 md:mr-14 md:text-base text-lg;
 }
 
 .card-section {
@@ -52,5 +64,5 @@ html {
 }
 
 .card {
-  @apply flex flex-col justify-center align-middle m-4 p-8 gap-2 rounded-xl bg-gray-200/10 shadow-lg opacity-80
+  @apply flex flex-col justify-center align-middle m-4 p-8 gap-2 bg-[var(--secondary)]/10 shadow-md opacity-80
 }

@@ -10,7 +10,7 @@ export default function InfoCard() {
           <img
             src={ProfilePicture}
             alt="Closeup portrait of me"
-            className="rounded-full sepia-[25%] border-2 border-white/90"
+            className="badge sepia-[25%] border-2 border-white/90"
           />
         </div>
         <div className="flex flex-col md:h-full justify-center text-center md:text-start">

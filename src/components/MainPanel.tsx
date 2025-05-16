@@ -6,7 +6,7 @@ import Timeline from "./Timeline";
 
 export default function MainPanel() {
   return (
-    <div className="flex flex-col gap-8 md:gap-16 md:ml-62 pb-8 bg-white/5">
+    <div className="flex flex-col gap-8 md:gap-16 md:ml-64 pb-8">
       <div id={"about"} className="flex flex-col gap-8">
         <InfoCard />
         <TechCard />
@@ -14,7 +14,7 @@ export default function MainPanel() {
       <Section name={"projects"}>
         <Projects />
       </Section>
-      <Section name={"timeline"}>
+      <Section name={"experience"}>
         <Timeline />
       </Section>
     </div>

@@ -20,7 +20,7 @@ function SocialBadge({ social }: { social: TypeSocialLink }) {
       key={`social-link-${social.name}`}
       target="_blank"
       href={social.url}
-      className="social-badge border-emerald-50/75 rounded-md hover:rounded-lg border-1 text-2xl md:text-lg md:px-4 hover:bg-white/10 md:tracking-[.15em] hover:border-emerald-100 hover:text-emerald-50"
+      className="badge social-badge md:px-0 md:tracking-[.15em] hover:bg-white/10 border-2"
     >
       <social.icon className="badge-icon" aria-label={`${social.name} Icon`} />
       <h4 className="social-name">{social.name}</h4>
@@ -43,7 +43,7 @@ function HighlightBadge({ text, href }: HighlightBadgeProps) {
       onMouseLeave={() => setIsHovered(false)}
       href={href}
       target="_blank"
-      className="social-badge md:px-4 md:tracking-[.15em] border-3 border-emerald-200 hover:border-green-300 bg-cyan-200 hover:bg-emerald-200 text-emerald-900 justify-between rounded-xs hover:rounded-xl"
+      className="social-badge md:px-4 hover:border-green-300 bg-[var(--primary)] hover:bg-[var(--tertiary)] justify-between hover:rounded-xl"
     >
       {isHovered ? (
         <FaEnvelopeOpen
@@ -53,10 +53,7 @@ function HighlightBadge({ text, href }: HighlightBadgeProps) {
       ) : (
         <FaEnvelope className="badge-icon" aria-label="Envelope Icon" />
       )}
-      <h3
-        ref={textRef}
-        className="social-name tracking-wide text-2xl md:text-xl"
-      >
+      <h3 ref={textRef} className="social-name">
         {text}
       </h3>
     </a>

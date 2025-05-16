@@ -56,14 +56,10 @@ function ProjectLinks({ project }: { project: Project }) {
 
 function LiveLink({ link }: { link: string }) {
   return (
-    <a
-      className="flex gap-2 items-center px-4 py-2 border rounded-sm border-emerald-50/90 hover:bg-white/10"
-      href={link}
-      target="_blank"
-    >
+    <a className="badge link-badge" href={link} target="_blank">
       <span className="relative flex items-center">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-200 opacity-75"></span>
-        <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-300"></span>
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-200 opacity-75"></span>
+        <span className="relative inline-flex h-3 w-3 rounded-full bg-green-300"></span>
       </span>
       <span>Live Site</span>
     </a>
@@ -72,11 +68,7 @@ function LiveLink({ link }: { link: string }) {
 
 function RepoLink({ link }: { link: string }) {
   return (
-    <a
-      className="flex items-center gap-2 px-4 py-2 border-1 rounded-sm border-emerald-50/90 hover:bg-white/10"
-      href={link}
-      target="_blank"
-    >
+    <a className="badge link-badge" href={link} target="_blank">
       <span className="relative flex items-center">
         <FaGithub />
       </span>

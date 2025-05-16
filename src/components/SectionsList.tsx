@@ -11,7 +11,7 @@ export default function SectionsList({ selected }: { selected: string }) {
           selected={selected === name}
         />
       ))}
-      <hr className="border-emerald-50/50" />
+      <hr className="badge" />
     </div>
   );
 }

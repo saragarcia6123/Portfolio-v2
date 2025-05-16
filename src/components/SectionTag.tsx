@@ -18,7 +18,7 @@ export function SectionTag({
       <h3
         className={`px-2 tracking-[.2em] text-xl flex justify-end ${
           selected
-            ? "text-emerald-50"
+            ? "text-green-200"
             : hover
             ? "text-emerald-50/80"
             : "text-emerald-50/50"

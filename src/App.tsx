@@ -21,20 +21,7 @@ function App() {
         <Footer />
       </div>
       {/* Tint Overlay */}
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          background:
-            "linear-gradient(to bottom, rgba(40, 50, 80), rgba(10, 20, 70))",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          zIndex: -10,
-        }}
-      />
+      <div className="fixed top-0 left-0 bottom-0 right-0 -z-10 size-full bg-[var(--bg)]" />
     </>
   );
 }
