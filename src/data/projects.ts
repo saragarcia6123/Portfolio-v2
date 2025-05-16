@@ -1,7 +1,7 @@
-function getImages(id: string, extension: string, total: number) {
+function getImages(id: string, total: number) {
   const images = [];
   for (let i = 1; i <= total; i++) {
-    images.push(`/project-images/${id}/${id}-${i}.${extension}`);
+    images.push(`/project-images/${id}/${id}-${i}.webp`);
   }
   return images;
 }
@@ -12,7 +12,7 @@ export const projects: Project[] = [
     title: "Sentiverse",
     description:
       "Full-stack application that analyzes song lyrics and classifies them into emotionally opposite pairs.",
-    images: getImages("sentiverse", "jpg", 4),
+    images: getImages("sentiverse", 4),
     technologies: [
       "React",
       "TailwindCSS",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: "Meteorology Dashboard",
     description:
       "Weather Dashboard with AEMET API featuring ML predictions for daily temperature forecast.",
-    images: getImages("meteo", "jpg", 4),
+    images: getImages("meteo", 4),
     technologies: [
       "Streamlit",
       "FastAPI",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     title: "Leads Summary Sheet",
     description:
       "Generates a collection of diverse plots for various insights into leads and time interval analysis.",
-    images: getImages("brand-plots", "png", 6),
+    images: getImages("brand-plots", 6),
     technologies: ["Streamlit", "Pandas", "Seaborn", "MatplotLib", "SciPy"],
     repoLink: "https://github.com/saragarcia6123/brand-data-summary-sheet",
     liveLink: "https://leads-summary-sheet.streamlit.app/",
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     title: "Live Audio Visualizer",
     description:
       "Generates realtime audio visualization with Jetpack Compose. Part of a larger app made during Work Experience.",
-    images: getImages("audio-recorder", "jpg", 2),
+    images: getImages("audio-recorder", 2),
     technologies: ["Kotlin", "Android", "Android Studio", "Jetpack Compose"],
     repoLink: "https://github.com/saragarcia6123/audio-recorder-visualizer",
     liveLink: null,
