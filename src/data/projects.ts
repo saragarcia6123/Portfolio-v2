@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: "Meteorology Dashboard",
     description:
       "Weather Dashboard with AEMET API featuring ML predictions for daily temperature forecast.",
-    images: getImages("meteo", "jpg", 3),
+    images: getImages("meteo", "jpg", 4),
     technologies: [
       "Streamlit",
       "FastAPI",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     title: "Leads Summary Sheet",
     description:
       "Generates a collection of diverse plots for various insights into leads and time interval analysis.",
-    images: getImages("brand-plots", "gif", 1),
+    images: getImages("brand-plots", "png", 6),
     technologies: ["Streamlit", "Pandas", "Seaborn", "MatplotLib", "SciPy"],
     repoLink: "https://github.com/saragarcia6123/brand-data-summary-sheet",
     liveLink: "https://leads-summary-sheet.streamlit.app/",

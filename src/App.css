@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply font-mono text-white;
+  @apply font-mono text-[rgb(230,240,230)];
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -64,5 +64,5 @@ html {
 }
 
 .card {
-  @apply flex flex-col justify-center align-middle m-4 p-8 gap-2 bg-[var(--secondary)]/10 shadow-md opacity-80
+  @apply border-[var(--primary)] border-1 flex flex-col justify-center align-middle m-4 p-8 gap-2 bg-[var(--secondary)]/10
 }

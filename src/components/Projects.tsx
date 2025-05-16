@@ -2,7 +2,7 @@ import { projects, type Project } from "../data/projects";
 import { technologies, type TechType } from "../data/tech";
 import { TechItemCard } from "./TechItemCard";
 import { FaGithub } from "react-icons/fa";
-import { Carousel } from "./Carousel";
+import ImageGrid from "./ImageGrid";
 
 export default function Projects() {
   return (
@@ -20,7 +20,7 @@ function ProjectCard({ project }: { project: Project }) {
       <h2 className="text-2xl tracking-wider">{project.title.toUpperCase()}</h2>
       <p className="text-lg">{project.description}</p>
       <ProjectTechs project={project} />
-      <Carousel images={project.images} />
+      <ImageGrid images={project.images} />
       <div className="w-full flex justify-center mt-8 mb-4">
         <ProjectLinks project={project} />
       </div>
