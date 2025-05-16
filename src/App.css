@@ -9,6 +9,7 @@
 html,
 body {
   @apply font-mono text-[rgb(230,240,230)];
+  overflow-x: hidden;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

@@ -20,7 +20,7 @@ function ProjectCard({ project }: { project: Project }) {
       <h2 className="text-2xl tracking-wider">{project.title.toUpperCase()}</h2>
       <p className="text-lg">{project.description}</p>
       <ProjectTechs project={project} />
-      <ImageGrid images={project.images} />
+      <ImageGrid images={project.images} project_id={project.id} />
       <div className="w-full flex justify-center mt-8 mb-4">
         <ProjectLinks project={project} />
       </div>
