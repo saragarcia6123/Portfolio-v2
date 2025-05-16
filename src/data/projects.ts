@@ -15,12 +15,12 @@ export const projects: Project[] = [
     images: getImages("sentiverse", "jpg", 4),
     technologies: [
       "React",
-      "Tailwind",
+      "TailwindCSS",
       "FastAPI",
       "OpenAI",
       "GraphQL",
       "Nginx",
-      "GCP",
+      "Google Cloud",
     ],
     repoLink: "https://github.com/saragarcia6123/Sentiverse",
     liveLink: "https://sentiverse.xyz",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     description:
       "Generates realtime audio visualization with Jetpack Compose. Part of a larger app made during Work Experience.",
     images: getImages("audio-recorder", "jpg", 2),
-    technologies: ["Kotlin", "Android", "Jetpack Compose"],
+    technologies: ["Kotlin", "Android", "Android Studio", "Jetpack Compose"],
     repoLink: "https://github.com/saragarcia6123/audio-recorder-visualizer",
     liveLink: null,
   },

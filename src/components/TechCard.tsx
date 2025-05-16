@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { technologies, TechSectionEnum, type TechType } from "../data/tech";
-import { TechHeader } from "./TechHeader";
 import { TechList } from "./TechList";
 
 export default function TechCard() {
@@ -30,24 +29,6 @@ export default function TechCard() {
     return [...new Set(techs)];
   }
 
-  function updateSelected(item: TechSectionEnum): void {
-    if (selected.includes(item)) {
-      setSelected(
-        selected.filter((itemInner: TechSectionEnum) => itemInner !== item)
-      );
-    } else {
-      setSelected((prev) => [...prev, item]);
-    }
-  }
-
-  function switchTab(item: TechSectionEnum) {
-    setAll(false);
-    if (toggleRef.current) {
-      toggleRef.current.innerText = toggleText[0];
-    }
-    updateSelected(item);
-  }
-
   function toggleAll() {
     setAll((prev) => !prev);
     if (toggleRef.current) {
@@ -56,38 +37,29 @@ export default function TechCard() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-2 p-4 md:mx-24 mx-3 mb-8">
-      <h3 className="text-xl uppercase tracking-widest">Tech Stack</h3>
-      <div className="flex flex-wrap gap-2 justify-center">
-        {Object.values(TechSectionEnum).map((item: TechSectionEnum) => (
-          <TechHeader
-            key={`tech-card-${item}`}
-            name={item}
-            selected={selected.includes(item)}
-            onClick={() => {
-              switchTab(item);
-            }}
-          />
-        ))}
+    <div className="card-section">
+      <h3 className="text-xl tracking-widest text-center uppercase">
+        Tech Stack
+      </h3>
+      <div className="p-4">
+        <TechList techsFiltered={filteredTechs()} />
+        {selected.length === 0 ? (
+          <p
+            ref={toggleRef}
+            onClick={() => toggleAll()}
+            className="hover:underline hover:cursor-pointer hidden"
+          >
+            {toggleText[0]}
+          </p>
+        ) : (
+          <p
+            onClick={() => setSelected([])}
+            className="hover:underline hover:cursor-pointer"
+          >
+            Clear
+          </p>
+        )}
       </div>
-      <hr className="opacity-20" />
-      <TechList techsFiltered={filteredTechs()} />
-      {selected.length === 0 ? (
-        <p
-          ref={toggleRef}
-          onClick={() => toggleAll()}
-          className="hover:underline hover:cursor-pointer hidden"
-        >
-          {toggleText[0]}
-        </p>
-      ) : (
-        <p
-          onClick={() => setSelected([])}
-          className="hover:underline hover:cursor-pointer"
-        >
-          Clear
-        </p>
-      )}
     </div>
   );
 }

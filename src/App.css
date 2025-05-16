@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply font-mono;
+  @apply font-mono text-white;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

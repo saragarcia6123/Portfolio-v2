@@ -16,7 +16,7 @@ function App() {
         <Sections sidebar={false} />
       </div>
 
-      <div className="flex flex-col justify-between min-h-[100vh]">
+      <div className="flex flex-col justify-between min-h-[100vh] items-center">
         <MainPanel />
         <Footer />
       </div>

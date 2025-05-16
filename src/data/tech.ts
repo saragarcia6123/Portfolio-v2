@@ -254,7 +254,7 @@ export const frameworks: TechType[] = [
     main: true,
   },
   {
-    name: "Tailwind",
+    name: "TailwindCSS",
     icon: SiTailwindcss,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
@@ -307,7 +307,7 @@ export const frameworks: TechType[] = [
     icon: SiAndroid,
     groups: [TechSectionEnum.MOBILE],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "Jetpack Compose",
@@ -684,7 +684,7 @@ export const tools: TechType[] = [
     icon: SiAndroidstudio,
     groups: [TechSectionEnum.MOBILE],
     category: TechCategoryEnum.IDE,
-    main: false,
+    main: true,
   },
   {
     name: "NeoVim",
@@ -708,7 +708,7 @@ export const tools: TechType[] = [
     main: true,
   },
   {
-    name: "GCP",
+    name: "Google Cloud",
     icon: SiGooglecloud,
     groups: [TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.CLOUD,
