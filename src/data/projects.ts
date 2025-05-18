@@ -8,24 +8,6 @@ function getImages(id: string, total: number) {
 
 export const projects: Project[] = [
   {
-    id: "sentiverse",
-    title: "Sentiverse",
-    description:
-      "Full-stack application that analyzes song lyrics and classifies them into emotionally opposite pairs.",
-    images: getImages("sentiverse", 4),
-    technologies: [
-      "React",
-      "TailwindCSS",
-      "FastAPI",
-      "OpenAI",
-      "GraphQL",
-      "Nginx",
-      "Google Cloud",
-    ],
-    repoLink: "https://github.com/saragarcia6123/Sentiverse",
-    liveLink: "https://sentiverse.xyz",
-  },
-  {
     id: "meteo",
     title: "Meteorology Dashboard",
     description:
@@ -43,6 +25,24 @@ export const projects: Project[] = [
     repoLink:
       "https://github.com/HAB-Equipo-Meteorologia/Proyecto-Meteorologico",
     liveLink: "https://proyectometeorologico.streamlit.app/Graficos",
+  },
+  {
+    id: "sentiverse",
+    title: "Sentiverse",
+    description:
+      "Full-stack application that analyzes song lyrics and classifies them into emotionally opposite pairs.",
+    images: getImages("sentiverse", 4),
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "FastAPI",
+      "OpenAI",
+      "GraphQL",
+      "Nginx",
+      "Google Cloud",
+    ],
+    repoLink: "https://github.com/saragarcia6123/Sentiverse",
+    liveLink: null,
   },
   {
     id: "brand-plots",
