@@ -24,7 +24,7 @@ export const projects: Project[] = [
     ],
     repoLink:
       "https://github.com/HAB-Equipo-Meteorologia/Proyecto-Meteorologico",
-    liveLink: "https://proyectometeorologico.streamlit.app/Graficos",
+    liveLink: null,
   },
   {
     id: "sentiverse",
