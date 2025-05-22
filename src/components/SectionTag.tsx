@@ -17,11 +17,7 @@ export function SectionTag({
     >
       <h3
         className={`px-2 tracking-[.2em] text-xl flex justify-end ${
-          selected
-            ? "text-green-200"
-            : hover
-            ? "text-emerald-50/80"
-            : "text-emerald-50/50"
+          selected ? "text-white" : hover ? "text-white/80" : "text-white/50"
         } transition-colors duration-200 ease-linear`}
       >
         {name.toUpperCase()}
