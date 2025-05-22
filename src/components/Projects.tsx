@@ -30,7 +30,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 function ProjectTechs({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col gap-4 text-sm mt-2">
+    <div className="flex flex-col gap-4 text-sm my-4">
       <div className="flex gap-2 flex-wrap">
         {project.technologies.map((techName) => (
           <TechItemCard

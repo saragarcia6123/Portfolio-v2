@@ -53,7 +53,7 @@ function HighlightBadge({ text, href }: HighlightBadgeProps) {
       ) : (
         <FaEnvelope className="badge-icon" aria-label="Envelope Icon" />
       )}
-      <h3 ref={textRef} className="social-name">
+      <h3 ref={textRef} className="social-name tracking-widest">
         {text}
       </h3>
     </a>

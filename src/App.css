@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -8,7 +8,6 @@
 
 html,
 body {
-  @apply font-mono text-[rgb(230,240,230)];
   overflow-x: hidden;
 
   @media (prefers-color-scheme: dark) {
@@ -45,7 +44,7 @@ html {
 }
 
 .badge {
-  @apply border-[var(--primary)];
+  @apply border-[var(--primary)] rounded-sm;
   p {
      @apply tracking-widest;
   }
@@ -64,5 +63,5 @@ html {
 }
 
 .card {
-  @apply border-[var(--primary)] border-1 flex flex-col justify-center align-middle m-4 p-8 gap-2 bg-[var(--secondary)]/10
+  @apply border-[var(--primary)] rounded-sm border-1 flex flex-col justify-center align-middle m-4 p-8 gap-2 bg-[var(--secondary)]/10
 }

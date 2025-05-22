@@ -54,7 +54,11 @@ function TimelineProjectContent({ project }: { project: TimelineProject }) {
   return (
     <div className="p-4 bg-white/10">
       <h4 className="mb-2 font-bold tracking-wide">{project.title}</h4>
-      <p>{project.description}</p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: project.description.replace(/\n/g, "<br>"),
+        }}
+      />
     </div>
   );
 }

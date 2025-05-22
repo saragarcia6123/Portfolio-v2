@@ -6,17 +6,17 @@ export default function InfoCard() {
   return (
     <div className="box-border flex flex-col md:flex-row gap-8 justify-center md:pl-8 mb-2 md:mt-12 mt-24">
       <div className="flex md:flex-row flex-col items-center gap-10 justify-center">
-        <div className="aspect-square flex justify-center w-32 min-w-[140px]">
+        <div className="aspect-square flex justify-center w-32 min-w-[140px] rounded-full">
           <img
             src={ProfilePicture}
             alt="Closeup portrait of me"
-            className="badge sepia-[25%] border-2 border-white/90"
+            className="sepia-[25%] border-white border-2 rounded-full"
           />
         </div>
         <div className="flex flex-col md:h-full justify-center text-center md:text-start">
           <h3 className="text-3xl mb-1 tracking-widest">SARA GARCIA</h3>
           <p className="text-xl uppercase tracking-wider">
-            <span className="text-nowrap">Full Stack Developer</span> &
+            <span className="text-nowrap">Software</span> &
             <span className="text-nowrap"> Data Engineer</span>
           </p>
           <p className="text-sm my-1 italic tracking-wide uppercase">

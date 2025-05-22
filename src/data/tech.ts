@@ -171,7 +171,7 @@ export const languages: TechType[] = [
     icon: SiGnubash,
     groups: [TechSectionEnum.BACK, TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.LANG,
-    main: false,
+    main: true,
   },
   {
     name: "Solidity",
@@ -258,7 +258,7 @@ export const frameworks: TechType[] = [
     icon: SiTailwindcss,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "FastAPI",
@@ -321,7 +321,7 @@ export const frameworks: TechType[] = [
     icon: SiFlutter,
     groups: [TechSectionEnum.MOBILE],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "React Native",
@@ -506,14 +506,14 @@ export const libraries: TechType[] = [
     icon: SiPytorch,
     groups: [TechSectionEnum.ML],
     category: TechCategoryEnum.LIBRARY,
-    main: false,
+    main: true,
   },
   {
     name: "Tensorflow",
     icon: SiTensorflow,
     groups: [TechSectionEnum.ML],
     category: TechCategoryEnum.LIBRARY,
-    main: false,
+    main: true,
   },
   {
     name: "SciPy",
@@ -575,7 +575,7 @@ export const libraries: TechType[] = [
 
 export const databases: TechType[] = [
   {
-    name: "Postgres",
+    name: "PostgreSQL",
     icon: SiPostgresql,
     groups: [TechSectionEnum.DB],
     category: TechCategoryEnum.DB,
@@ -684,7 +684,7 @@ export const tools: TechType[] = [
     icon: SiAndroidstudio,
     groups: [TechSectionEnum.MOBILE],
     category: TechCategoryEnum.IDE,
-    main: true,
+    main: false,
   },
   {
     name: "NeoVim",

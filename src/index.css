@@ -5,10 +5,10 @@
   -moz-osx-font-smoothing: grayscale;
 
 
-  --primary: rgb(47, 129, 81);
-  --secondary: rgb(220,255,240);
-  --tertiary: rgb(37, 118, 122);
-  --bg: rgb(24, 25, 27);
+  --primary: rgb(116, 180, 210);
+  --secondary: rgb(157, 219, 212);
+  --tertiary: rgb(71, 130, 167);
+  --bg: rgb(48, 53, 62);
 }
 
 .user-select-none {

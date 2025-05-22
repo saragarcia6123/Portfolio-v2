@@ -27,6 +27,29 @@ export const projects: Project[] = [
     liveLink: "https://proyectometeorologico.streamlit.app/Graficos",
   },
   {
+    id: "brand-plots",
+    title: "Leads Summary Sheet",
+    description:
+      "Generates a collection of diverse plots for various insights into leads and time interval analysis.",
+    images: getImages("brand-plots", 6),
+    technologies: ["Streamlit", "Pandas", "Seaborn", "MatplotLib", "SciPy"],
+    repoLink: "https://github.com/saragarcia6123/brand-data-summary-sheet",
+    liveLink: "https://leads-summary-sheet.streamlit.app/",
+  },
+  {
+    id: "audio-recorder",
+    title: "Live Audio Visualizer",
+    description:
+      "Generates realtime audio visualization with Jetpack Compose. Part of a larger app made during Work Experience.",
+    images: [
+      "/project-images/audio-recorder/audio-recorder-1.gif",
+      "/project-images/audio-recorder/audio-recorder-2.webp",
+    ],
+    technologies: ["Kotlin", "Android", "Android Studio", "Jetpack Compose"],
+    repoLink: "https://github.com/saragarcia6123/audio-recorder-visualizer",
+    liveLink: null,
+  },
+  {
     id: "sentiverse",
     title: "Sentiverse",
     description:
@@ -42,26 +65,6 @@ export const projects: Project[] = [
       "Google Cloud",
     ],
     repoLink: "https://github.com/saragarcia6123/Sentiverse",
-    liveLink: null,
-  },
-  {
-    id: "brand-plots",
-    title: "Leads Summary Sheet",
-    description:
-      "Generates a collection of diverse plots for various insights into leads and time interval analysis.",
-    images: getImages("brand-plots", 6),
-    technologies: ["Streamlit", "Pandas", "Seaborn", "MatplotLib", "SciPy"],
-    repoLink: "https://github.com/saragarcia6123/brand-data-summary-sheet",
-    liveLink: "https://leads-summary-sheet.streamlit.app/",
-  },
-  {
-    id: "audio-recorder",
-    title: "Live Audio Visualizer",
-    description:
-      "Generates realtime audio visualization with Jetpack Compose. Part of a larger app made during Work Experience.",
-    images: getImages("audio-recorder", 2),
-    technologies: ["Kotlin", "Android", "Android Studio", "Jetpack Compose"],
-    repoLink: "https://github.com/saragarcia6123/audio-recorder-visualizer",
     liveLink: null,
   },
 ];
