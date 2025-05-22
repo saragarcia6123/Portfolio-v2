@@ -53,11 +53,7 @@ export const timeline: TimelineItem[] = [
         
         • Developed in a team of 2 a production-ready Android Jetpack Compose application for elderly users
         
-        • Leveraged Kotlin’s asynchronous coroutines for a real-time, <2ms latency audio visualisation system
-
-        • Designed  a company Chatbot API testing page in Streamlit, with voice cloning features utilising XTTS.
-
-        • Contributed to Galician audio sample validation for AI Chatbot training data.`,
+        • Leveraged Kotlin’s asynchronous coroutines for a real-time, <2ms latency audio visualisation system`,
       },
       {
         title: "Chatbot API Testing Page",
