@@ -1,13 +1,13 @@
 import type { IconType } from "react-icons";
 import { FaFile, FaGithub, FaLinkedin } from "react-icons/fa";
 
-export type TypeSocialLink = { name: string; url: string; icon: IconType }
+export type TypeSocialLink = { name: string; url: string; icon: IconType };
 
 export const SOCIAL_LINKS: TypeSocialLink[] = [
   {
     name: "GitHub",
     url: "https://github.com/saragarcia6123",
-    icon: FaGithub
+    icon: FaGithub,
   },
   {
     name: "LinkedIn",
@@ -22,4 +22,4 @@ export const SOCIAL_LINKS: TypeSocialLink[] = [
   },
 ];
 
-export const EMAIL = "saragarcia6123@gmail.com"
+export const EMAIL = "hello@saragarcia.dev";
