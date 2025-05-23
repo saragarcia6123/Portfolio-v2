@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "React",
       "TailwindCSS",
       "FastAPI",
-      "OpenAI",
+      "PyTorch",
       "GraphQL",
       "Nginx",
       "Google Cloud",
