@@ -8,12 +8,8 @@
 
 html,
 body {
+  color: white;
   overflow-x: hidden;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-
 }
 
 html {
