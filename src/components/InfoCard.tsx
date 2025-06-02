@@ -16,11 +16,7 @@ export default function InfoCard() {
         <div className="flex flex-col md:h-full justify-center text-center md:text-start">
           <h3 className="text-3xl mb-1 tracking-widest">SARA GARCIA</h3>
           <p className="text-xl uppercase tracking-wider">
-            <span className="text-nowrap">Software</span> &
-            <span className="text-nowrap"> Data Engineer</span>
-          </p>
-          <p className="text-sm my-1 italic tracking-wide uppercase">
-            4+ Yrs personal coding experience
+            Software Engineer
           </p>
           <div className="flex gap-4 mt-1 text-base justify-center md:justify-start">
             <div className="flex items-center gap-2 tracking-wide">
