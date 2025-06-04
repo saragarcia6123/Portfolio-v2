@@ -1,6 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
 import ProfilePicture from "/pfp.png";
-import Socials from "./Socials";
+import SocialsTop from "./SocialsTop";
 
 export default function InfoCard() {
   return (
@@ -27,7 +27,7 @@ export default function InfoCard() {
         </div>
       </div>
       <div className="md:hidden mb-8">
-        <Socials />
+        <SocialsTop />
       </div>
     </div>
   );

@@ -1,14 +1,14 @@
 import { useRef, useState, type RefObject } from "react";
 import { FaEnvelope, FaEnvelopeOpen } from "react-icons/fa";
-import { EMAIL, SOCIAL_LINKS, type TypeSocialLink } from "../data/socials";
+import { email, top_socials, type TypeSocialLink } from "../data/socials";
 
-export default function Socials() {
+export default function SocialsTop() {
   return (
     <div className="w-full md: mt-4">
       <p className="text-center mb-4 md:mb-2">Let's connect.</p>
       <div className="flex flex-col w-full gap-4 items-center">
-        {SOCIAL_LINKS.map((social) => SocialBadge({ social }))}
-        <HighlightBadge text={"Email"} href={`mailto:${EMAIL}`} />
+        {top_socials.map((social: TypeSocialLink) => SocialBadge({ social }))}
+        <HighlightBadge text={"Email"} href={`mailto:${email}`} />
       </div>
     </div>
   );

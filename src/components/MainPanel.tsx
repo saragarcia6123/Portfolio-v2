@@ -3,6 +3,7 @@ import InfoCard from "./InfoCard";
 import Projects from "./Projects";
 import TechCard from "./TechCard";
 import Timeline from "./Timeline";
+import SocialsBottom from "./SocialsBottom";
 
 export default function MainPanel() {
   return (
@@ -17,6 +18,7 @@ export default function MainPanel() {
       <Section name={"experience"}>
         <Timeline />
       </Section>
+      <SocialsBottom />
     </div>
   );
 }

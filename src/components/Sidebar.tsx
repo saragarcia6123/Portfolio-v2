@@ -1,5 +1,5 @@
 import Sections from "./Sections";
-import Socials from "./Socials";
+import SocialsTop from "./SocialsTop";
 
 export default function Sidebar() {
   return (
@@ -7,7 +7,7 @@ export default function Sidebar() {
       <div className="h-64 w-full">
         <Sections sidebar={true} />
       </div>
-      <Socials />
+      <SocialsTop />
     </div>
   );
 }
