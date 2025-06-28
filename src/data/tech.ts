@@ -272,14 +272,14 @@ export const frameworks: TechType[] = [
     icon: SiFlask,
     groups: [TechSectionEnum.BACK],
     category: TechCategoryEnum.FRAMEWORK,
-    main: false,
+    main: true,
   },
   {
     name: "Django",
     icon: SiDjango,
     groups: [TechSectionEnum.BACK],
     category: TechCategoryEnum.FRAMEWORK,
-    main: false,
+    main: true,
   },
   {
     name: "Spring Boot",
@@ -300,7 +300,7 @@ export const frameworks: TechType[] = [
     icon: SiStreamlit,
     groups: [TechSectionEnum.DS, TechSectionEnum.ML, TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "Android",
@@ -352,7 +352,7 @@ export const libraries: TechType[] = [
     icon: SiExpress,
     groups: [TechSectionEnum.BACK],
     category: TechCategoryEnum.LIBRARY,
-    main: false,
+    main: true,
   },
   {
     name: "Apollo",
@@ -506,14 +506,14 @@ export const libraries: TechType[] = [
     icon: SiPytorch,
     groups: [TechSectionEnum.ML],
     category: TechCategoryEnum.LIBRARY,
-    main: true,
+    main: false,
   },
   {
     name: "Tensorflow",
     icon: SiTensorflow,
     groups: [TechSectionEnum.ML],
     category: TechCategoryEnum.LIBRARY,
-    main: true,
+    main: false,
   },
   {
     name: "SciPy",
@@ -614,7 +614,7 @@ export const databases: TechType[] = [
     icon: SiMongodb,
     groups: [TechSectionEnum.DB],
     category: TechCategoryEnum.DB,
-    main: false,
+    main: true,
   },
   {
     name: "Redis",
@@ -719,7 +719,7 @@ export const tools: TechType[] = [
     icon: SiAmazonwebservices,
     groups: [TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.CLOUD,
-    main: false,
+    main: true,
   },
   {
     name: "Heroku",
