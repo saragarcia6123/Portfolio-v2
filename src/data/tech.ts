@@ -153,7 +153,7 @@ export const languages: TechType[] = [
       TechSectionEnum.MOBILE,
     ],
     category: TechCategoryEnum.LANG,
-    main: false,
+    main: true,
   },
   {
     name: "Typescript",
@@ -251,7 +251,7 @@ export const frameworks: TechType[] = [
     icon: SiReact,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "TailwindCSS",
@@ -272,7 +272,7 @@ export const frameworks: TechType[] = [
     icon: SiFlask,
     groups: [TechSectionEnum.BACK],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "Django",
@@ -352,7 +352,7 @@ export const libraries: TechType[] = [
     icon: SiExpress,
     groups: [TechSectionEnum.BACK],
     category: TechCategoryEnum.LIBRARY,
-    main: true,
+    main: false,
   },
   {
     name: "Apollo",
@@ -621,7 +621,7 @@ export const databases: TechType[] = [
     icon: SiRedis,
     groups: [TechSectionEnum.DB],
     category: TechCategoryEnum.DB,
-    main: false,
+    main: true,
   },
   {
     name: "Airtable",
@@ -719,7 +719,7 @@ export const tools: TechType[] = [
     icon: SiAmazonwebservices,
     groups: [TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.CLOUD,
-    main: true,
+    main: false,
   },
   {
     name: "Heroku",
