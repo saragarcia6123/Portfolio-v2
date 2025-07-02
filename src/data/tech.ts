@@ -153,7 +153,7 @@ export const languages: TechType[] = [
       TechSectionEnum.MOBILE,
     ],
     category: TechCategoryEnum.LANG,
-    main: true,
+    main: false,
   },
   {
     name: "Typescript",
@@ -251,7 +251,7 @@ export const frameworks: TechType[] = [
     icon: SiReact,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
-    main: false,
+    main: true,
   },
   {
     name: "TailwindCSS",
