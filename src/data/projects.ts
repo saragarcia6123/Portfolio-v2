@@ -8,6 +8,25 @@ function getImages(id: string, total: number) {
 
 export const projects: Project[] = [
   {
+    id: "devportal",
+    title: "DevPortal",
+    description:
+      "Secure full-stack custom authentication portal leveraging FastAPI and React.",
+    images: getImages("devportal", 2),
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Redis",
+      "React",
+      "PostgreSQL",
+      "Docker",
+      "Tanstack",
+    ],
+    repoLink:
+      "https://github.com/saragarcia6123/DevPortal",
+    liveLink: null,
+  },
+  {
     id: "meteo",
     title: "Meteorology Dashboard",
     description:

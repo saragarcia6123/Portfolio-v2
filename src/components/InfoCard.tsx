@@ -1,5 +1,5 @@
 import { FaLocationDot } from "react-icons/fa6";
-import ProfilePicture from "/pfp.png";
+import ProfilePicture from "/pfp.webp";
 import SocialsTop from "./SocialsTop";
 
 export default function InfoCard() {
@@ -10,13 +10,16 @@ export default function InfoCard() {
           <img
             src={ProfilePicture}
             alt="Closeup portrait of me"
-            className="sepia-[25%] border-white border-2 rounded-full"
+            className="sepia-[10%] shadow-md rounded-full aspect-square object-cover [object-position:50%_10%]"
           />
         </div>
         <div className="flex flex-col md:h-full justify-center text-center md:text-start">
           <h3 className="text-3xl mb-1 tracking-widest">SARA GARCIA</h3>
           <p className="text-xl uppercase tracking-wider">
-            Software Engineer
+            Software Engineer &
+          </p>
+          <p className="text-xl uppercase tracking-wider">
+            Cyber Security Student
           </p>
           <div className="flex gap-4 mt-1 text-base justify-center md:justify-start">
             <div className="flex items-center gap-2 tracking-wide">

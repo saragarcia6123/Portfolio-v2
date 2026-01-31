@@ -85,7 +85,7 @@ import type { IconType, IconType as IconTypeReact } from "react-icons";
 import { FaChartArea } from "react-icons/fa";
 import { FaChartColumn } from "react-icons/fa6";
 import { BsRegex, BsTranslate } from "react-icons/bs";
-import { GiFoundryBucket, GiStrawberry } from "react-icons/gi";
+import { GiFoundryBucket, GiPalmTree, GiStrawberry } from "react-icons/gi";
 import { LuSoup } from "react-icons/lu";
 
 export enum TechSectionEnum {
@@ -251,7 +251,7 @@ export const frameworks: TechType[] = [
     icon: SiReact,
     groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "TailwindCSS",
@@ -279,7 +279,7 @@ export const frameworks: TechType[] = [
     icon: SiDjango,
     groups: [TechSectionEnum.BACK],
     category: TechCategoryEnum.FRAMEWORK,
-    main: true,
+    main: false,
   },
   {
     name: "Spring Boot",
@@ -351,6 +351,12 @@ export const libraries: TechType[] = [
     name: "Express.js",
     icon: SiExpress,
     groups: [TechSectionEnum.BACK],
+    category: TechCategoryEnum.LIBRARY,
+    main: false,
+  }, {
+    name: "Tanstack",
+    icon: GiPalmTree,
+    groups: [TechSectionEnum.FRONT],
     category: TechCategoryEnum.LIBRARY,
     main: false,
   },
@@ -638,7 +644,7 @@ export const tools: TechType[] = [
     icon: SiGit,
     groups: [TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.CICD,
-    main: false,
+    main: true,
   },
   {
     name: "GitHub",
@@ -719,7 +725,7 @@ export const tools: TechType[] = [
     icon: SiAmazonwebservices,
     groups: [TechSectionEnum.DEVOPS],
     category: TechCategoryEnum.CLOUD,
-    main: false,
+    main: true,
   },
   {
     name: "Heroku",
