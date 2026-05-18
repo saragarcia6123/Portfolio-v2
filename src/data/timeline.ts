@@ -3,13 +3,13 @@ export const timeline: TimelineItem[] = [{
   location: "ISS Innovation Hub",
   link: "https://www.lancaster.ac.uk/iss/itpi/safe-ai-at-lancaster-sail/",
   from: "November 2025",
-  to: "Present",
+  to: "March 2026",
   projects: [
     {
       title: "Safe AI Lancaster",
       description: `<strong>Proof of Value React Front End for Gen AI app</strong>
         
-        • Delivered 70+ bug fixes and features for SAIL through Azure DevOps, praised for clarity and documentation quality in PRs
+        • Delivered 80+ bug fixes and features for SAIL through Azure DevOps, praised for clarity and documentation quality in PRs
         
         • Implemented accessibility enhancements ensuring ease of use for disabled students and teachers across different platforms
         
@@ -22,7 +22,7 @@ export const timeline: TimelineItem[] = [{
   ],
 },
 {
-  title: "Cyber Security BSc Hons",
+  title: "Computer Science BSc Hons",
   location: "Lancaster University",
   link: "https://www.lancaster.ac.uk/study/undergraduate/courses/cyber-security-bsc-hons-i900/2026/",
   from: "October 2025",
@@ -90,7 +90,7 @@ export const timeline: TimelineItem[] = [{
     {
       title: "Android Application",
       description: `
-        <strong>Delivered all features ahead of schedule and received a 10/10 satisfaction rating from the company.</strong>
+        <strong>Delivered all features ahead of schedule and received a high company satisfaction rating.</strong>
         
         • Developed in a team of 2 a production-ready Android Jetpack Compose application for elderly users
         
