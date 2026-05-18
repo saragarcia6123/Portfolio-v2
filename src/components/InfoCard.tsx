@@ -19,7 +19,7 @@ export default function InfoCard() {
             Software Engineer &
           </p>
           <p className="text-xl uppercase tracking-wider">
-            Cyber Security Student
+            Computer Science Student
           </p>
           <div className="flex gap-4 mt-1 text-base justify-center md:justify-start">
             <div className="flex items-center gap-2 tracking-wide">
