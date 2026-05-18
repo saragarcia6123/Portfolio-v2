@@ -29,7 +29,7 @@ const social_links: TypeSocialLink[] = [
   },
   {
     name: "Resume",
-    url: "https://docs.google.com/document/d/13ALIqmRljg4p3YDpuC-jxVU1Qs_gaHpLRMIvZeUYVtY/edit?usp=sharing",
+    url: "https://drive.proton.me/urls/FMYHA86YY0#09TfNrTfVE9a",
     icon: FaFile,
     top: true,
     bottom: false
