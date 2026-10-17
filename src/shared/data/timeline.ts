@@ -1,9 +1,26 @@
-export const timeline: TimelineItem[] = [{
+export const timeline: TimelineItem[] = [
+  {
+    title: "Machine Learning Researcher",
+    location: "Lancaster University",
+    link: null,
+    from: new Date("2026-07-01"),
+    to: new Date("2026-09-01"),
+    category: "Experience",
+    projects: [
+      {
+        title: "Content Avoidance",
+        description: `• Researched machine learning methods using Python for real-time video analysis to detect and filter unwanted content, contributing to the development of a software demonstrator for the BBC.
+         • Produced a research report evaluating results from multiple machine learning models.`
+      }
+    ]
+  },
+  {
   title: "Junior Software Developer",
   location: "ISS Innovation Hub",
   link: "https://www.lancaster.ac.uk/iss/itpi/safe-ai-at-lancaster-sail/",
-  from: "November 2025",
-  to: "March 2026",
+  from: new Date("2025-10-01"),
+  to: new Date("2026-03-01"),
+  category: "Experience",
   projects: [
     {
       title: "Safe AI Lancaster",
@@ -24,9 +41,10 @@ export const timeline: TimelineItem[] = [{
 {
   title: "Computer Science BSc Hons",
   location: "Lancaster University",
-  link: "https://www.lancaster.ac.uk/study/undergraduate/courses/cyber-security-bsc-hons-i900/2026/",
-  from: "October 2025",
-  to: "Present",
+  link: "https://www.lancaster.ac.uk/study/undergraduate/courses/computer-science-bsc-hons-g400/",
+  from: new Date("2025-10-01"),
+  to: new Date("2028-06-01"),
+  category: "Education",
   projects: [
     {
       title: "Modules",
@@ -35,7 +53,6 @@ export const timeline: TimelineItem[] = [{
          • Fundamentals of Computer Science
          • Digital Systems
          • Professionalism in Practice
-         • Chinese Studies
         `,
     },
   ],
@@ -44,8 +61,9 @@ export const timeline: TimelineItem[] = [{
   title: "Data Science & Machine Learning Bootcamp",
   location: "HACK A BOSS",
   link: "https://www.hackaboss.com/ciencia-datos-bootcamp",
-  from: "October 2024",
-  to: "March 2025",
+  from: new Date("2024-10-01"),
+  to: new Date("2025-03-01"),
+  category: "Education",
   projects: [
     {
       title: "Weekly Tasks",
@@ -84,8 +102,9 @@ export const timeline: TimelineItem[] = [{
   title: "Sofware Developer - Work Experience",
   location: "BALIDEA",
   link: "https://www.balidea.com/gidi-supera-primer-piloto/",
-  from: "February 2024",
-  to: "April 2024",
+  from: new Date("2024-02-01"),
+  to: new Date("2024-04-01"),
+  category: "Experience",
   projects: [
     {
       title: "Android Application",
@@ -94,7 +113,7 @@ export const timeline: TimelineItem[] = [{
         
         • Developed in a team of 2 a production-ready Android Jetpack Compose application for elderly users
         
-        • Leveraged Kotlin’s asynchronous coroutines for a real-time, <2ms latency audio visualisation system`,
+        • Leveraged Kotlin's asynchronous coroutines for a real-time, <2ms latency audio visualisation system`,
     },
     {
       title: "Chatbot API Testing Page",
@@ -112,8 +131,9 @@ export const timeline: TimelineItem[] = [{
   title: "International Baccalaureate",
   location: "Bexley Grammar School",
   link: "https://www.bexleygs.co.uk/page/?title=What+is+the+IB%3F&pid=132",
-  from: "September 2020",
-  to: "May 2022",
+  from: new Date("2020-09-01"),
+  to: new Date("2022-05-01"),
+  category: "Education",
   projects: [
     {
       title: "Internal Assessment",
@@ -137,9 +157,10 @@ export const timeline: TimelineItem[] = [{
 export type TimelineItem = {
   title: string;
   location: string;
-  link: string;
-  from: string;
-  to: string;
+  link: string | null;
+  from: Date;
+  to: Date;
+  category: 'Experience' | 'Education' | 'Projects';
   projects: TimelineProject[];
 };
 

@@ -1,6 +1,5 @@
 import { FaLocationDot } from "react-icons/fa6";
 import ProfilePicture from "/pfp.webp";
-import SocialsTop from "./SocialsTop";
 
 export default function InfoCard() {
   return (
@@ -16,21 +15,15 @@ export default function InfoCard() {
         <div className="flex flex-col md:h-full justify-center text-center md:text-start">
           <h3 className="text-3xl mb-1 tracking-widest">SARA GARCIA</h3>
           <p className="text-xl uppercase tracking-wider">
-            Software Engineer &
-          </p>
-          <p className="text-xl uppercase tracking-wider">
             Computer Science Student
           </p>
           <div className="flex gap-4 mt-1 text-base justify-center md:justify-start">
             <div className="flex items-center gap-2 tracking-wide">
               <FaLocationDot className="size-4 opacity-90" />
-              <p>Lancaster, UK</p>
+              <p>Lancaster University</p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="md:hidden mb-8">
-        <SocialsTop />
       </div>
     </div>
   );

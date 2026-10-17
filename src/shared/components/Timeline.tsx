@@ -1,14 +1,13 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import {
-  timeline,
   type TimelineItem,
   type TimelineProject,
 } from "../data/timeline";
 
-export default function Timeline() {
+export default function Timeline({ items }: { items: TimelineItem[] }) {
   return (
     <div className="card-section">
-      {timeline.map((item: TimelineItem) => (
+      {items.map((item: TimelineItem) => (
         <TimelineCard
           key={`timeline-project-card-${item.title.toLowerCase()}`}
           item={item}
@@ -29,7 +28,13 @@ function TimelineCard({ item }: { item: TimelineItem }) {
           <span>{item.location}</span>
         </h4>
         <p className="italic">
-          {item.from} - {item.to}
+          {item.from.toLocaleDateString('en-US', {
+            month: 'long',
+            year: 'numeric'
+          })} - {item.to.toLocaleDateString('en-US', {
+            month: 'long',
+            year: 'numeric'
+          })}
         </p>
       </div>
       <div className="flex flex-col gap-4 mt-4">
@@ -40,12 +45,14 @@ function TimelineCard({ item }: { item: TimelineItem }) {
           />
         ))}
       </div>
-      <div className="w-full flex justify-center mt-4">
-        <a target="_blank" href={item.link} className="link-badge badge">
-          <p className="text-nowrap">More Info</p>
-          <FaArrowUpRightFromSquare size={16} />
-        </a>
-      </div>
+      {
+        item.link && <div className="w-full flex justify-center mt-4">
+          <a target="_blank" href={item.link} className="link-badge badge">
+            <p className="text-nowrap">More Info</p>
+            <FaArrowUpRightFromSquare size={16} />
+          </a>
+        </div>
+      }
     </div>
   );
 }

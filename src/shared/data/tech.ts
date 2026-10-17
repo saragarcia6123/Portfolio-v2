@@ -78,7 +78,7 @@ import {
   SiTypescript,
   SiVite,
   SiVitest,
-  SiXml,
+  SiXml
 } from "react-icons/si";
 import { DiDatabase, DiJava, DiVisualstudio } from "react-icons/di";
 import type { IconType, IconType as IconTypeReact } from "react-icons";

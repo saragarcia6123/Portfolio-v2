@@ -4,19 +4,27 @@ import Projects from "./Projects";
 import TechCard from "./TechCard";
 import Timeline from "./Timeline";
 import SocialsBottom from "./SocialsBottom";
+import SocialsTop from "./SocialsTop";
+import { timeline } from "../data/timeline";
 
 export default function MainPanel() {
   return (
     <div className="flex flex-col gap-8 md:gap-16 md:ml-64 pb-8 max-w-[1100px]">
       <div id={"about"} className="flex flex-col gap-8">
         <InfoCard />
+        <div className="md:hidden mb-8">
+          <SocialsTop />
+        </div>
         <TechCard />
       </div>
       <Section name={"projects"}>
         <Projects />
       </Section>
       <Section name={"experience"}>
-        <Timeline />
+        <Timeline items={timeline.filter((item) => item.category === "Experience")} />
+      </Section>
+      <Section name={"education"}>
+        <Timeline items={timeline.filter((item) => item.category === "Education")} />
       </Section>
       <SocialsBottom />
     </div>
